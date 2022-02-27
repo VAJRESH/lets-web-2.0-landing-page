@@ -186,7 +186,8 @@ h6 {
 #header #logo img {
   padding: 0;
   margin: 0;
-  max-height: 40px;
+  max-height: 55px;
+  margin-top: -10px;
 }
 
 /*--------------------------------------------------------------
@@ -819,6 +820,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   background-color: #0e1b4d;
   color: #fff;
   padding: 10px 100px;
+  margin: 10px;
 }
 
 #schedule .nav-tabs a.active {
@@ -887,6 +889,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-style: italic;
   color: #152b79;
   margin-bottom: 0;
+}
+
+#schedule .day{
+  color: red;
+  font-weight: bold;
 }
 
 /*--------------------------------------------------------------

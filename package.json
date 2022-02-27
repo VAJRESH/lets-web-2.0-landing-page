@@ -1,0 +1,27 @@
+{
+  "name": "lets-web-2.0-landing-page",
+  "version": "1.0.0",
+  "description": "Thanks for downloading this theme!",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VAJRESH/lets-web-2.0-landing-page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VAJRESH/lets-web-2.0-landing-page/issues"
+  },
+  "homepage": "https://github.com/VAJRESH/lets-web-2.0-landing-page#readme",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "nodemailer": "^6.7.2"
+  }
+}
