@@ -3,6 +3,9 @@ jQuery(document).ready(function ($) {
 
   //Contact
   $("form.contactForm").submit(function () {
+    $("#sendmessage").addClass("show");
+    $("#sendmessage").html("Sending the email....");
+
     var f = $(this).find(".form-group"),
       ferror = false,
       emailExp = /^[^\s()<>@,;:\/]+@\w[\w\.-]+\.[a-z]{2,}$/i;
@@ -123,12 +126,16 @@ jQuery(document).ready(function ($) {
     };
 
     // send email
-    fetch("/.netlify/functions/send_emails", {
+    fetch("/.netlify/functions/send-emails", {
       method: "POST",
       mode: "cors",
       body: JSON.stringify(data),
     }).then((res) => {
-      console.log(res);
+      setTimeout(() => {
+        $("#errormessage").removeClass("show");
+        $("#sendmessage").removeClass("show");
+      }, 3000);
+
       // in case the email was not send
       if (res.status !== 200) {
         $("#sendmessage").removeClass("show");
@@ -139,6 +146,7 @@ jQuery(document).ready(function ($) {
       }
 
       $("#sendmessage").addClass("show");
+      $("#sendmessage").html("Your message has been sent. Thank you!");
       $("#errormessage").removeClass("show");
       $(".contactForm").find("input, textarea").val("");
       // clear the form
