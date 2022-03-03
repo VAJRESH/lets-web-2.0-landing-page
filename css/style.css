@@ -678,6 +678,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 36px;
   font-weight: bold;
   margin-bottom: 10px;
+  margin-top: -7px;
   color: #fff;
 }
 
@@ -775,6 +776,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   width: 36px;
   height: 36px;
   padding-top: 9px;
+  margin-right: 10px;
 }
 
 #speakers-details .details .social a:hover {
@@ -1161,60 +1163,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 /*--------------------------------------------------------------
-# Subscribe Section
---------------------------------------------------------------*/
-
-#subscribe {
-  padding: 60px;
-  background: url(../img/subscribe-bg.jpg) center center no-repeat;
-  background-size: cover;
-  overflow: hidden;
-  position: relative;
-}
-
-#subscribe:before {
-  content: "";
-  background: rgba(6, 12, 34, 0.6);
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-
-#subscribe .section-header h2,
-#subscribe p {
-  color: #fff;
-}
-
-#subscribe input {
-  background: #fff;
-  color: #060c22;
-  border: 0;
-  outline: none;
-  margin: 0;
-  padding: 9px 20px;
-  border-radius: 50px;
-  font-size: 14px;
-}
-
-#subscribe button {
-  border: 0;
-  padding: 9px 25px;
-  cursor: pointer;
-  background: #f82249;
-  color: #fff;
-  transition: all 0.3s ease;
-  outline: none;
-  font-size: 14px;
-  border-radius: 50px;
-}
-
-#subscribe button:hover {
-  background: #e0072f;
-}
-
-/*--------------------------------------------------------------
 # Buy Tickets Section
 --------------------------------------------------------------*/
 
@@ -1548,12 +1496,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 # Responsive Media Queries
 --------------------------------------------------------------*/
 
-@media (min-width: 767px) {
-  #subscribe input {
-    min-width: 400px;
-  }
-}
-
 @media (min-width: 768px) {
   #contact .contact-address,
   #contact .contact-phone,
@@ -1579,10 +1521,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 
   #about {
-    background-attachment: fixed;
-  }
-
-  #subscribe {
     background-attachment: fixed;
   }
 }
@@ -1662,8 +1600,3 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 }
 
-@media (max-width: 460px) {
-  #subscribe button {
-    margin-top: 10px;
-  }
-}
